@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="images/images.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3.0.0-rc.5/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4.0.0-rc.1/dist/vue-router.global.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+        </header>
+
+        <nav>
+            <router-link to="/">Home</router-link>
+            <router-link to="/projects">Projects</router-link>
+            <router-link to="/contact">Contact Me</router-link>
+        </nav>
+
+        <router-view>
+
+        </router-view>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
